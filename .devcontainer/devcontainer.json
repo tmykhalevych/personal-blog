@@ -1,0 +1,8 @@
+{
+    "name": "Jekyll workspace",
+    "build": { "dockerfile": "Dockerfile" },
+    "forwardPorts": [ 4000 ],
+    "mounts": [ "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached" ],
+    "updateContentCommand": "bundle update --bundler && bundle",
+    "postStartCommand": "zsh"
+}
