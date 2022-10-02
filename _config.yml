@@ -18,20 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Here you are, this is my blog. At least it should'v been 🤣
+title: Mykhalevych
 email: taras.mykhalevych@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Hy you, random perdsom from the internet. It is really exciting to meet you.
-  I'm Taras, you can call me tmykha by the way. I just recently discovered that my friend
-  Denys has really awesome website/blod (do not hesitate to visit dnahurnyi.com)
-  so I thougtht why don't I still create something similar 🤔... More in the artickles. Enjoy,
-  or feel free to email me how bad/good the stuff is. More in the articles, see you.
+description: Here you are, it's my blog, and you are welcome here! 🙂
 baseurl: "/"
 url: "https://tmykha.com"
-github_username:  tmykhalevych
+github_username: tmykhalevych
 
 # Build settings
-theme: beautiful-jekyll-theme
+theme: jekyll-theme-clean-blog
+
 # plugins:
 #   - jekyll-feed
 

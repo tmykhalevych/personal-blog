@@ -2,7 +2,18 @@
     "name": "Jekyll workspace",
     "build": { "dockerfile": "Dockerfile" },
     "forwardPorts": [ 4000 ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "znck.grammarly"
+            ]
+        }
+    },
     "mounts": [ "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached" ],
+    "settings": {
+        "terminal.integrated.profiles.linux": { "zsh": { "path": "/usr/bin/zsh" }},
+        "terminal.integrated.defaultProfile.linux": "zsh"
+    },
     "updateContentCommand": "bundle update --bundler && bundle",
-    "postStartCommand": "zsh"
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
 }
